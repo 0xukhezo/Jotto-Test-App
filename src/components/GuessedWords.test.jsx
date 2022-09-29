@@ -1,7 +1,7 @@
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import EnzymeAdapter from "@wojtekmaj/enzyme-adapter-react-17";
-import { findByTestAttribute, checkProps } from "../test/testUtils";
+import { findByTestAttribute, checkProps } from "../../test/testUtils";
 import GuessedWords from "./GuessedWords.jsx";
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });

@@ -1,7 +1,7 @@
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import EnzymeAdapter from "@wojtekmaj/enzyme-adapter-react-17";
-import { findByTestAttribute, checkProps } from "../test/testUtils";
+import { findByTestAttribute, checkProps } from "../../test/testUtils";
 import Input from "./Input.jsx";
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
@@ -48,6 +48,7 @@ describe("render success when the boolean is true or false", () => {
       expect(submitButton.exists()).toBe(false);
     });
   });
+  
   describe("success is false", () => {
     let wrapper;
     beforeEach(() => {
