@@ -18,7 +18,7 @@ function App() {
   }, 2000);
 
   return (
-    <div class="container">
+    <div class="container" data-test="app-component">
       <h1>React App</h1>
       <Congrats success={success} />
       <GuessedWords
